@@ -95,7 +95,7 @@ body{
 
 /* Mobile responsive for navigation */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
 
     .nav-links,.book{
         display: none;
@@ -246,7 +246,7 @@ body{
 
 /* mobile responsive for hero section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
  .hero{
     flex-basis: 100%;
     flex-direction: column;
@@ -307,7 +307,7 @@ body{
 }
 /* for tablet view */
 
-@media screen and (min-width:550px) and (max-width:768px){
+@media screen and (min-width:550px) and (max-width:780px){
     .h-img img{
         width: 40%;
     }
@@ -448,7 +448,7 @@ body{
 
 /* mobile responsive for opening hours card */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     .open,.parent{
         flex-wrap: wrap;
     }
@@ -469,7 +469,7 @@ body{
 
 /* mobile responsive for about us */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
 
     .about{
         flex-wrap: wrap;
@@ -512,7 +512,7 @@ body{
 }
 /* about us tablet view */
 
-@media screen and (min-width:550px) and (max-width:768px){
+@media screen and (min-width:550px) and (max-width:780px){
 
     .a-img .img1{
         width: 40%;
@@ -634,7 +634,7 @@ body{
 
 /* mobile view for service page */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     
     .s-title{
         text-align: center;
@@ -658,7 +658,7 @@ body{
 }
 
 /* service page for tablet view */
-@media screen and (min-width:550px) and (max-width:768px){
+@media screen and (min-width:550px) and (max-width:780px){
     .container{
         display: grid;
         grid-template-columns: auto auto;
@@ -747,7 +747,7 @@ body{
 
 /* mobil view for play vieo section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     .play-parent{
         padding: 20px;
     }
@@ -764,7 +764,7 @@ body{
         color: var(--primary-color);
     }
 }
-@media  screen and (min-width:550px) and  (max-width:768px) {
+@media  screen and (min-width:550px) and  (max-width:780px) {
     .play{
         gap: 100px;
     }
@@ -772,7 +772,7 @@ body{
 }
 
 /* mobile view for poster section */
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
 
 .poster{
     display: flex;
@@ -780,7 +780,7 @@ body{
 }
 }
 /* poster section tablet view */
-@media  screen and (min-width:550px) and  (max-width:768px) {
+@media  screen and (min-width:550px) and  (max-width:780px) {
     .poster{
         display: grid;
         grid-template-columns: auto auto;
@@ -851,7 +851,7 @@ body{
 }
 /* mobile view for choose us section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     .main-cont{
         display: flex;
         flex-direction: column;
@@ -883,7 +883,7 @@ body{
     }
 }
 
-@media  screen and (min-width:550px) and (max-width:768px) {
+@media  screen and (min-width:550px) and (max-width:780px) {
 
     .main-cont{
         flex-wrap: wrap;
@@ -963,7 +963,7 @@ body{
 
 /* mobile view for work section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     .work{
         flex-wrap: wrap;
     }
@@ -1052,7 +1052,7 @@ body{
 
 /* Mobile view for team member section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     .t-containers{
         flex-wrap: wrap;
         justify-content: center;
@@ -1201,7 +1201,7 @@ body{
 
 /* Mobile reponsive for testimonial */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
 
 .test-child{
     flex-wrap: wrap;
@@ -1243,7 +1243,7 @@ body{
 
 /* Testimonials for tablet view */
 
-@media screen and (min-width:550px) and (max-width:768px){
+@media screen and (min-width:550px) and (max-width:780px){
  .test-img div img{
     width: 50%;
 }   
@@ -1294,7 +1294,7 @@ body{
 
 /* Mobile responsive for map section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
     .map{
         flex-wrap: wrap;
     }
@@ -1364,7 +1364,7 @@ body{
 
 /* Mobile responsive for footer section */
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:780px){
 .f-parent{
     display: flex;
     flex-direction: column;
@@ -1384,7 +1384,7 @@ body{
 
 /* Footer for tablet view  */
 
-@media screen and (min-width:550px) and (max-width:768px){
+@media screen and (min-width:550px) and (max-width:780px){
     .f-parent{
         display: flex;
         flex-direction: column;
@@ -1399,4 +1399,5 @@ body{
         display: flex;
         gap: 50px;
     }
+
 }
