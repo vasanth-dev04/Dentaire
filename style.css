@@ -88,9 +88,9 @@ body{
 
 }
 
-.menu,.m-navbar{
+ .menu,.m-navbar{
     display: none;
-}
+} 
 
 
 /* Mobile responsive for navigation */
@@ -110,9 +110,10 @@ body{
         width: 35px;
         border-radius: 5px;
     }
+
     /* navigation bar for movile view */
 
-     .m-navbar{
+    .m-navbar{
     background-color: var(--primary-color);
     position: fixed;
     width: 50%;
@@ -1415,9 +1416,4 @@ body{
         display: flex;
         gap: 50px;
     }
-
 }
-
-
-
-
