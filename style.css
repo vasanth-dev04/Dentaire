@@ -100,7 +100,7 @@ body{
     .nav-links,.book{
         display: none;
     }
-    .menu{
+    .menu,.m-navbar{
         display: unset;        
     }
     .menu button{
@@ -1417,6 +1417,7 @@ body{
     }
 
 }
+
 
 
 
