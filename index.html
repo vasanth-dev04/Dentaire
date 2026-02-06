@@ -42,8 +42,9 @@
     </nav>
 
     <!-- Nav bar for mobile view -->
-    <div class="m-navbar">
+    <div class="m-navbar" id="mob-navbar" >
         <ul>
+            <button class="close-btn" onclick="closeSidebar()">✖</button>
             <li>Home</li>
             <li>Services</li>
             <li>About us</li>
@@ -542,11 +543,16 @@
 <script>
     // side bar
 
-    const sidebar = document.getElementById('m-navbar');
+    const sidebar = document.getElementById('mob-navbar');
     const menuBtn = document.getElementById('menuBtn');
     
     function openSidebar() {
-        sidebar.style.top="";
+        sidebar.style.left="0px"
     }
+    function closeSidebar() {
+        sidebar.style.left="-350px";
+    }
+
 </script>
+
 </html>
