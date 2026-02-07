@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:"Open Sans", sans-serif;
+     scroll-behavior: smooth;
 }
 /* Root for Colours */
 :root{
@@ -19,6 +20,7 @@
 }
 body{
     background-color: var(--secondary-color);
+   
 }
 
 /* Navigation bar */
@@ -58,14 +60,11 @@ body{
     align-items: center;
     background-color: var(--accent-color);
     color: #FFFFFF;
-    width: 220px;
+    width: max-content;
     height: 50px;    
     border-radius:30px;
-    padding: 20px;
+    padding: 10px;
     border: none;
-}
-.make{
-    width: 230px;
 }
 
 .but{
@@ -90,10 +89,6 @@ body{
 }
 .but div img{
     width: 20px;
-}
-.make .but{
-    width: 300px;
-
 }
 
  .menu,.m-navbar{
@@ -654,7 +649,6 @@ body{
     font-weight: 500;
 }
 .s-but  button{
-    width: 200px;
     font-size: 15px;
 }
 
@@ -739,7 +733,6 @@ body{
     align-items: center;
     background-color: var(--accent-color);
     color: #FFFFFF;
-    width: 220px;
     height: 50px;    
     border-radius:30px;
     padding: 20px;
@@ -1013,7 +1006,7 @@ body{
     }
 }
 
-/* tema members section */
+/* team members section */
 
 .team{
     padding: 50px 20px;
@@ -1208,6 +1201,7 @@ body{
     color: var(--primary-color);
 }
 .f-cont div p{
+
     color: var(--text-color);
 }
 .test-but{
@@ -1376,6 +1370,18 @@ body{
 .child-cont div ul li{
     list-style: none;
     padding: 2px 0px;
+}
+.child-cont div ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.child-cont div ul li img{
+    width: 20px;
+}
+#getin div ul li{
+    display: flex;
+    align-items: center; 
+    gap: 5px;
 }
 .child-cont div p{
     font-weight: bold;
@@ -1590,5 +1596,256 @@ body{
     }
     .cont-form div input{
         font-size: 15px;
+    }
+}
+
+/* Service section starts */
+
+.service-ind{
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 10px;
+    gap: 20px;
+    
+}
+
+.s-fix{
+    position: sticky !important;
+    top: 30px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.s-cont-parent{
+    width: 360px;
+    height: 280px;
+    border-radius: 20px;
+    background-color:var(--secondary-color);
+    padding: 20px 10px;
+
+
+}
+.s-cont-parent p{
+    color: var(--primary-color);
+    font-weight: bold;padding-left: 20px;
+    
+}
+.s-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dark-divider-color);
+    padding: 10px;
+   
+}
+.s-cont p{
+     color: var(--primary-color);
+     font-weight: normal;
+}
+.s-cont img{
+    width: 25px;
+}
+
+/* help container */
+
+.help-cont{
+    width: 360px;
+    height: 400px;
+    background-color: var(--accent-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+.help-cont img{
+    width: 70px;
+}
+.help-cont h1,p{
+    color: var(--white-color);
+}
+/* service child  2 */
+
+.service-child-2 img{
+    width: 80%;
+    border-radius: 20px;
+}
+.service-child-2 div H3{
+    color: var(--primary-color);
+}
+.child2-title{
+     display: flex;
+     flex-direction: column;
+     padding: 15px 0px;
+     gap: 20px;
+
+}
+.service-child-2 div p{
+    color: var(--text-color);
+}
+.service-img{
+    display: flex;   
+    justify-content: space-evenly;
+}
+.service-img img{
+    width: 40%;
+
+}
+.service-questions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service-questions h1{
+    color: var(--primary-color);
+    font-size: 44px;
+}
+
+.question-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px var(--dark-divider-color);
+}
+.question-cont img{
+    width: 20px;
+
+}
+/* Mobile Reponsive For Service page */
+
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .service-ind{
+        display:flex ;
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+    .s-cont-parent {
+        width: 300px;
+        height: 250px;
+    }
+    .help-cont{
+        width: 300px;
+        height: 350px;
+    }
+    .service-child-1{
+        align-items: center;
+    }
+    .service-child-2 img{
+        width: 98%;
+    }
+    .service-img{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .service-questions h1 {
+        font-size: 24px;
+    }
+    .question-cont img{
+    width: 20px;
+
+}
+
+}
+/* For Tablet view */
+@media screen and (min-width:550px) and (max-width:780px) {
+    .service-child-1{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .s-cont-parent{
+        height: 350px;
+    }
+    .s-cont{
+        padding: 20px;
+    }
+    .service-img{
+        display: flex;
+        flex-direction: row;
+    }
+    .service-img img{
+        width: 40%;
+    }
+    .s-fix{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+/* Service page end */
+
+/* Terms & Condition page  */
+
+.term-para h1{
+    font-size: 24px;
+    color: var(--primary-color);
+}
+.term-para p{
+    color: var(--text-color);
+    font-size: 14px;
+}
+.term-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.terms{
+    display: flex;
+    background-color: var(--white-color);
+    padding: 50px 10px;
+}
+.term-content{
+    flex-basis: 60%;
+}
+.fix-parent{
+    flex-basis: 40%;
+}
+.fix-parent{
+    background-color: var(--secondary-color);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.table-fix{
+    position: sticky;
+    top: 60px;
+}
+.table-fix h1{
+    color: var(--primary-color);
+    font-size: 34px;
+}
+.term-content{
+    padding: 20px;
+}
+.table-fix ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 20px;
+}
+.table-fix ul li a{
+    color: var(--text-color);
+}
+
+/* Mobile Responsive For Terms& Conditions */
+
+@media screen and (min-width:320px) and (max-width:768px){
+    .terms{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .table-fix h1{
+        font-size: 24px;
+        text-align: center;
     }
 }
