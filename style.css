@@ -1715,6 +1715,7 @@ body{
 .service-questions{
     display: flex;
     flex-direction: column;
+    padding:20px;
     gap: 20px;
 }
 .service-questions h1{
@@ -1868,3 +1869,4 @@ body{
         text-align: center;
     }
 }
+
