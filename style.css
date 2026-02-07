@@ -72,6 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    padding-left: 10px; 
     color: #FFFFFF;
     font-weight: bold;
     background-color: transparent;
@@ -201,7 +202,8 @@ body{
 }
 .h-img{
     flex-basis: 50%; 
-    position: relative;   
+    position: relative; 
+    bottom: -5px;  
 }
 .h-img img{
     width: 80%;
@@ -527,6 +529,7 @@ body{
     .points ul{
         display: flex;
         flex-direction: column;
+        padding-left: 20px;
     }
 
 
@@ -735,7 +738,7 @@ body{
     color: #FFFFFF;
     height: 50px;    
     border-radius:30px;
-    padding: 20px;
+    padding: 10px;
     border: none;
 }
 .poster-section{
@@ -1400,35 +1403,44 @@ body{
 .f-parent{
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
-    padding: 20px 0px;
+    padding: 20px 10px;
+    gap: 20px;
+    align-items: baseline;
+
 }
 .child-links{
-     display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: baseline;
+}
+ .child-links{
+    flex-direction: column;
     gap: 20px;
     padding-top: 10px;
 }
 .child-logo p{
     font-size: 15px;
 }
+ .child-logo{
+        width: 90%;
+    } 
 }
 
 /* Footer for tablet view  */
 
-@media screen and (min-width:550px) and (max-width:768px){
+@media screen and (min-width:550px) and (max-width:788px){
     .f-parent{
         display: flex;
         flex-direction: column;
     }
-    .child-logo{
-        width: 90%;
-    }
+   
     .child-logo img{
         width: 30%;
     }
     .child-links{
         display: flex;
+        flex-direction: row;
         gap: 50px;
     }
 }
@@ -1527,7 +1539,11 @@ body{
 .cont-form{
     display: flex;
     flex-direction: column;
+    padding: 20px;
     gap: 20px;
+}
+.contact-img{
+    text-align: center;
 }
 .contact-img img{
     border-radius: 30px;
@@ -1585,7 +1601,7 @@ body{
         box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.527);
     }
     .contact-map-link{
-        padding: 20px 10px;
+        padding: 20px;
     }
     .contact-form{
         display: flex;
@@ -1681,7 +1697,7 @@ body{
 .child2-title{
      display: flex;
      flex-direction: column;
-     padding: 15px 0px;
+     padding: 15px 10px;
      gap: 20px;
 
 }
@@ -1725,26 +1741,31 @@ body{
     .service-ind{
         display:flex ;
         flex-direction: column;
-        padding: 50px 10px;
+        padding: 40px 10px;
     }
     .s-cont-parent {
-        width: 300px;
+        width: 90%;
         height: 250px;
     }
     .help-cont{
-        width: 300px;
+        width: 90%;
         height: 350px;
     }
     .service-child-1{
         align-items: center;
     }
+    #s-child-img {
+        text-align: center;
+       
+    }
     .service-child-2 img{
-        width: 98%;
+        width: 80%;
     }
     .service-img{
         display: flex;
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
     .service-questions h1 {
         font-size: 24px;
@@ -1797,7 +1818,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-bottom: 20px;
+    padding: 10px 0px;
 }
 .terms{
     display: flex;
@@ -1823,9 +1844,6 @@ body{
     color: var(--primary-color);
     font-size: 34px;
 }
-.term-content{
-    padding: 20px;
-}
 .table-fix ul{
     display: flex;
     flex-direction: column;
@@ -1843,6 +1861,7 @@ body{
     .terms{
         display: flex;
         flex-direction: column-reverse;
+        padding:30px;
     }
     .table-fix h1{
         font-size: 24px;
