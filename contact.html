@@ -6,12 +6,19 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
      <!-- Google font link -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+     <!-- scroll animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -22,13 +29,13 @@
         <div class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li>About us</li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
         <div class="book">
-            <button class="but">Book Appointment
+            <button class="but"  onclick="ena()">Book Appointment
              <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
@@ -48,7 +55,7 @@
             <button class="close-btn" onclick="closeSidebar()">✖</button>
             <li><a href="index.html">Home</a></li>
             <li><a href="service.html">Services</a></li>
-            <li>About us</li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact us</a></li>
             <li>Book an appointment</li>
         </ul>
@@ -74,29 +81,44 @@
         </div>
             <div class="cont-grp">
             <div class="contact-cont-1">
-                <img src="https://html.awaikenthemes.com/dentaire/images/icon-location.svg" alt="">
-                <h2>Visit us on</h2>
+                <div class="contact-icon">
+                 <img src="https://html.awaikenthemes.com/dentaire/images/icon-location.svg" alt="">
+                    <div>
+                 <h2>Visit us on</h2>                
                 <p>24/11 Robert Road , New York , USA</p>
+                </div>
+                </div>
             </div>
             <div class="contact-cont-1">
+                <div class="contact-icon">
                 <img src="https://html.awaikenthemes.com/dentaire/images/icon-phone.svg" alt="">
+                <div>
                 <h2>Contact us</h2>
-                <p>(+01) 789 854 856 <br>(+01) 789 854 856</p>
+                <p>(+01) 789 854 856 , (+01) 789 854 856</p>
+                    </div>
+                </div>
             </div>
             <div class="contact-cont-1">
+                <div class="contact-icon">
                 <img src="https://html.awaikenthemes.com/dentaire/images/icon-clock.svg" alt="">
-                <h2>Working Hours</h2>
-                <p>Mon to Fri : 10:00 To 6:00 Sat : 10:00AM To 3:00PM</p>
+                <div>
+                <h2>Working Hours</h2>               
+                <p>Mon to Fri : 10:00 To 6:00 <br> Sat : 10:00AM To 3:00PM</p>
+                 </div></div>
             </div>
             <div class="contact-cont-1">
+                <div class="contact-icon">
                 <img src="https://html.awaikenthemes.com/dentaire/images/icon-mail.svg" alt="">
+                <div>
                 <h2>Email Us</h2>
                 <p>info@domainname.com sales@domainname.com</p>
+                </div>
+                </div>
             </div>
         </div>
         </div>
         <div class="contact-map-link">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15755.193388533495!2d77.87102794999998!3d9.1726552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1770295512955!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15755.193388533495!2d77.87102794999998!3d9.1726552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1770295512955!5m2!1sen!2sin" width="600" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
@@ -140,7 +162,7 @@
                 <div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="contact.html">Book Appointment</a></li>
                 </ul>
@@ -164,9 +186,8 @@
                 </div>
                 <div>
                 <ul>
-                    <li><img src="./imges-icons/domain.png" alt="">info@domain.com</li>
-                    <li><img src="./imges-icons/call.png" alt="">+(123) 698-5245</li>
-                    <li><img src="./imges-icons/mail.png" alt="">dentaire@gmail.com</li>
+                    <li><a href="tel:8765432100"><img src="./imges-icons/call.png" alt="">+(123) 698-5245</a></li>
+                    <li><a href="mailto:vasanth@gmail.com"><img src="./imges-icons/mail.png" alt="">dentaire@gmail.com</a></li>
                     <li><img src="./imges-icons/location.png" alt="">123,4th St,Chennai.</li>
                 </ul>
                 </div>
@@ -177,6 +198,43 @@
             <p>Copyright © 2024 All Rights Reserved.</p>
         </div>
     </footer>
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent">
+    <div class="popup" id="popup">
+            <img src="./imges-icons/doctor.jpg" alt="">
+        <div class="popup-child"> 
+            <h1>Book An Apointment</h1>
+            <div class="pop-close">
+            <button onclick="finish()" ><img src="./imges-icons/icons8-close-30.png" width="20px">
+            </button>
+            </div>
+            <div class="input-cont-1">
+                <p>Your Name</p>
+                <input type="text">
+                <img src="./imges-icons/icons8-user-32.png" alt="" class="p-icon">
+            </div>
+            <div class="input-cont-1">
+            <p>Phone no</p>
+            <input type="text">
+             <span><img src="./imges-icons/icons8-call-48.png" alt="" class="p-icon"></span>
+            </div>
+            
+            <div class="input-cont-1">
+            <p>Any Message</p>
+            <textarea name="" id="" rows="4" cols="28"></textarea>
+            <span><img src="./imges-icons/icons8-message-32.png" alt="" class="p-icon"></span>
+            </div>
+            <div class="input-cont-2">
+            <p>Select your</p>
+            <input type="date">
+             <span><img src="" class="p-icon"></span>
+            </div>
+            <div class="pop-button">
+            <button onclick="finish()">Submit</button>
+            </div>
+        </div>
+    </div>
+    </section>
 </body>
 <script>
     // side bar
@@ -191,6 +249,17 @@
         sidebar.style.left="-1000px";
     }
 
-</script>
+    // pop up
+    
+    var p = document.getElementById("popup-parent");
 
+    function ena(){
+        p.style.display = "flex";
+    }
+
+    function finish(){
+        p.style.display = "none";
+    }
+
+</script>
 </html>
