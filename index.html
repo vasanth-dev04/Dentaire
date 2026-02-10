@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dentaire</title>
+    <!-- bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 
     <!-- Google font link -->
@@ -11,22 +15,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+      
+    <!-- scroll animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
         <div class="logo">
         <img src="https://html.awaikenthemes.com/dentaire/images/logo.svg" alt="">
         </div>
         <div class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li>About us</li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
         <div class="book" id="but1">
-            <button class="but">Book Appointment
+            <button class="but" onclick="ena()">Book Appointment
              <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
@@ -46,7 +54,7 @@
             <button class="close-btn" onclick="closeSidebar()">✖</button>
             <li><a href="index.html">Home</a></li>
             <li><a href="service.html">Services</a></li>
-            <li>About us</li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact us</a></li>
             <li>Book an appointment</li>
         </ul>
@@ -55,13 +63,13 @@
 
     <!-- hero section  -->
 
-    <section class="hero">
+    <section class="hero" data-aos="zoom-in-up" data-aos-duration="1500">
         <div class="title">
             <h1>Experience <span> Dental Excellence</span> with a Gentle Touch</h1>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
 
             <div class="make">
-            <button class="but">Make an appointment
+            <button class="but" onclick="ena()">Make an appointment
                 <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
                 </div>
@@ -119,7 +127,7 @@
         </div>
         </div>
         <div class="open-but">
-        <button class="but">Book Appointment
+        <button class="but" onclick="ena()">Book Appointment
             <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
@@ -130,11 +138,11 @@
     <!-- About us section -->
 
     <section class="about">
-        <div class="a-img">
+        <div class="a-img" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
             <img src="https://html.awaikenthemes.com/dentaire/images/about-us-img-1.jpg" alt="" class="img1">
             <img src="	https://html.awaikenthemes.com/dentaire/images/about-us-img-2.jpg" alt="" class="img2" >
         </div>
-        <div class="a-title">
+        <div class="a-title" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
             <p>ABOUT US</p>
             <h2><span> Your Journey</span> to a Healthier Smile Begins Here</h2>
             <h4 class="p">The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments. With dental practices throughout the world.</h4>
@@ -148,46 +156,46 @@
                 </ul>
             </div>
             <div class="o-but">
+                <a href="about.html">
             <button class="but">Read more About us
             <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
-            </button>
+            </button></a>
         </div>            
         </div>
     </section>
 
     <!-- Service section -->
-
     <section class="service">
-        <div class="s-title">
+        <div class="s-title"   data-aos="fade-down" data-aos-delay="400" data-aos-duration="1500">
             <p>OUR SERVICE</p>
             <h1><span>High Quality</span> Services For You.</h1>
             <p>We are committed to sustainability. eco-friendly initiatives.</p>
         </div>
         <div class="container">
-            <div class="cont1">
+            <div class="cont1" data-aos="fade-up" data-aos-delay="400"  >
                 <img src="https://html.awaikenthemes.com/dentaire/images/icon-services-1.svg" alt="">
                 <h3>Genaral Dental Care</h3>
                 <p>We are excited to meet you and provide the best dental care for your family.</p>
                 <div><button>Read More <div><img src="./imges-icons/white-arrow.png" alt=""></div>
                 </button></div>
             </div>
-            <div class="cont1">
+            <div class="cont1" data-aos="fade-up" data-aos-delay="600">
                 <img src="	https://html.awaikenthemes.com/dentaire/images/icon-services-2.svg" alt="">
                 <h3>Dental Implants</h3>
                 <p>We are excited to meet you and provide the best dental care for your family.</p>
                 <div><button>Read More <div><img src="./imges-icons/white-arrow.png" alt=""></div>
                 </button></div>
             </div>
-            <div class="cont1">
+            <div class="cont1" data-aos="fade-up" data-aos-delay="800">
                 <img src="	https://html.awaikenthemes.com/dentaire/images/icon-services-3.svg" alt="">
                 <h3>Cosmatic Dentistry</h3>
                 <p>We are excited to meet you and provide the best dental care for your family.</p>
                 <div><button>Read More <div><img src="./imges-icons/white-arrow.png" alt=""></div>
                 </button></div>
             </div>
-            <div class="cont1">
+            <div class="cont1" data-aos="fade-up" data-aos-delay="1000">
                 <img src="https://html.awaikenthemes.com/dentaire/images/icon-services-4.svg" alt="">
                 <h3>Teeth Whitening</h3>
                 <p>We are excited to meet you and provide the best dental care for your family.</p>
@@ -198,54 +206,57 @@
         <div class="s-bottom">
             <p>We believe in using the latest technology and techniques to ensure the best outcomes for our patients.</p>
 
-            <div class="s-but">
-            <button class="but">View All Service
+            <div class="s-but" data-aos="fade-up" data-aos-duration="1500">
+                <a href="service.html">
+            <button class="but" >View All Service
             <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
-            </button>
+            </button></a>
         </div>
     </section>
 
+
     <!-- Play video section -->
     <section class="play-parent">
-    <div class="play">
+    <div class="play" >
         <div class="p-title">
             <p>VISIT CLINIC</p>
             <h1>Comprehensive Dental Care For All Ages</h1>
         </div>
         <div class="p-but">
+            <a href="service.html">
             <button class="but">View All Service
             <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
-            </button>
+            </button></a>
         </div>
     </section>
     <section class="poster-section">
         <div class="poster">
-            <div class="pos1">
+            <div class="pos1" data-aos="fade-up"  data-aos-duration="1000">
                 <div>
                 <h1>75+</h1>
                 <h2>Insuracnce Covered</h2>
                 </div>
                 <p>Our team loves dental trivia. Did you know that tooth enamel.</p>                
             </div>
-            <div class="pos1">
+            <div class="pos1" data-aos="fade-down"  data-aos-duration="1100">
                 <div>
                 <h1>2k+</h1>
                 <h2>Realized Projects</h2>
                 </div>
                 <p>Our team loves dental trivia. Did you know that tooth enamel.</p>                
             </div>
-            <div class="pos1">
+            <div class="pos1" data-aos="fade-up"  data-aos-duration="1200">
                 <div>
                 <h1>22k</h1>
                 <h2>Happy Customers</h2>
                 </div>
                 <p>Our team loves dental trivia. Did you know that tooth enamel.</p>                
             </div>
-            <div class="pos1">
+            <div class="pos1" data-aos="fade-down"  data-aos-duration="1300">
                 <div>
                 <h1>18+</h1>
                 <h2>Experience Doctors</h2>
@@ -258,13 +269,13 @@
     <!-- Choose us section -->
 
     <section class="choose">
-        <div class="c-title">
+        <div class="c-title" data-aos="fade-down"  data-aos-delay="500" data-aos-duration="1500">
             <p>WHY CHOOSE US</p>
             <h1><span>Diagnosis Of </span> Dental Diseases</h1>
             <p>We are committed to sustainability. eco-friendly initiatives.</p>
         </div>
         <div class="main-cont">
-        <div class="container-left">
+        <div class="container-left" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">
             <div class="c-1">
                 <div>
                 <h2>Experienced Doctor</h2>
@@ -287,10 +298,10 @@
                 <div><img src="	https://html.awaikenthemes.com/dentaire/images/icon-why-us-3.svg" alt=""></div>
             </div>
         </div>
-        <div class="teeth-img">
+        <div class="teeth-img" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500">
             <img src="https://html.awaikenthemes.com/dentaire/images/why-choose-us-img.png" alt="">
         </div>
-        <div class="container-right">
+        <div class="container-right" data-aos="fade-down" data-aos-duration="1500">
             <div class="c-2">
                 <div>
                     <img src="	https://html.awaikenthemes.com/dentaire/images/icon-why-us-4.svg" alt="">
@@ -325,10 +336,10 @@
     <!-- Appointment section -->
 
     <section class="work">
-        <div class="w-img">
+        <div class="w-img" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600">
             <img src="https://html.awaikenthemes.com/dentaire/images/how-it-work-img.jpg" alt="">
         </div>
-        <div class="w-title">
+        <div class="w-title" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="700">
             <p>HOW IT WORKS</p>
             <h1><span>What We Do </span> For Your Teeth</h1>
              <p><span> We are committed to sustainability. Our clinic practices eco-friendly initiatives like digital records to reduce paper waste and energy-efficient equipment.</span></p>
@@ -347,13 +358,13 @@
     <!-- Team members section -->
 
     <section class="team">
-        <div class="t-title">
+        <div class="t-title" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
             <p>OUR TEAM</p>
             <h1><span>Our Friendly</span> Dentists Team</h1>
             <p><span> We are committed to sustainability. eco-friendly initiatives.</span></p>
         </div>
         <div class="t-containers">
-            <div class="t-1">
+            <div class="t-1" data-aos="fade-up" data-aos-delay="400" >
                 <div>
                 <img src="https://html.awaikenthemes.com/dentaire/images/team-1.jpg" alt="">
                 </div>
@@ -362,7 +373,7 @@
                     <p>Lead Dentist</p>
                 </div>
             </div>
-            <div class="t-1">
+            <div class="t-1" data-aos="fade-up" data-aos-delay="600" >
                 <div>
                 <img src="https://html.awaikenthemes.com/dentaire/images/team-2.jpg" alt="">
                 </div>
@@ -371,7 +382,7 @@
                     <p>Senior Dentist</p>
                 </div>
             </div>
-            <div class="t-1">
+            <div class="t-1" data-aos="fade-up" data-aos-delay="800" >
                 <div>
                 <img src="https://html.awaikenthemes.com/dentaire/images/team-3.jpg" alt="">
                 </div>
@@ -380,7 +391,7 @@
                     <p>Orthodontist</p>
                 </div>
             </div>
-            <div class="t-1">
+            <div class="t-1" data-aos="fade-up" data-aos-delay="1000" >
                 <div>
                 <img src="https://html.awaikenthemes.com/dentaire/images/team-4.jpg" alt="">
                 </div>
@@ -396,13 +407,13 @@
 
     <section class="test">
         
-        <div class="test-title">
+        <div class="test-title" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
             <p>Testimonial</p>
             <h1><span>What Our</span> Client Say</h1>
             <p><span>We are committed to sustainability. eco-friendly initiatives.</span></p>
         </div>
         <section class="test-child">
-        <div class="test-img">
+        <div class="test-img" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
             <div>
                 <img src="https://html.awaikenthemes.com/dentaire/images/testimonials-img.jpg" alt="">
             </div>
@@ -423,24 +434,62 @@
                 </div>
             </div>
         </div>
-        <div class="test-feed">
-            <div>
-                <img src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
-            </div>
-            <div class="feed">
-            <p>"Excellent service and care. The staff is knowledgeable and always willing to answer questions. I wouldn't go anywhere else for my dental needs.""From the moment I walked in, I felt welcomed and cared for. staff is exceptional."</p>
-            </div>
-            <div class="f-cont">
-                <img src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg" alt="">
-                <div>
-                <h2>Leo das</h2>
-                <p>Designer</p>
-                </div>
+        <div class="test-feed" data-aos="fade-left" data-aos-duration="1500">
+            <div class="carousel slide" id="carouselExampleInterval" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                    <div>
+                    <img src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                    </div>
+                    <div class="feed">
+                    <p>"Excellent service and care. The staff is knowledgeable and always willing to answer questions. I wouldn't go anywhere else for my dental needs.""From the moment I walked in, I felt welcomed and cared for. staff is exceptional."</p>
+                    </div>
+                    <div class="f-cont">
+                    <img src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg" alt="">
+                    <div>
+                    <h2>Leo das</h2>
+                    <p>Designer</p>
+                    </div>
+                    </div>
+                    </div>
+                     <div class="carousel-item" data-bs-interval="3000">
+                    <div>
+                    <img src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                    </div>
+                    <div class="feed">
+                    <p>"Excellent service and care. The staff is knowledgeable and always willing to answer questions. I wouldn't go anywhere else for my dental needs.""From the moment I walked in, I felt welcomed and cared for. staff is exceptional."</p>
+                    </div>
+                    <div class="f-cont">
+                    <img src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg" alt="">
+                    <div>
+                    <h2>Harold Das</h2>
+                    <p>Designer</p>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                    <div>
+                    <img src="https://html.awaikenthemes.com/dentaire/images/icon-testimonial-quote.svg" alt="">
+                    </div>
+                    <div class="feed">
+                    <p>"Excellent service and care. The staff is knowledgeable and always willing to answer questions. I wouldn't go anywhere else for my dental needs.""From the moment I walked in, I felt welcomed and cared for. staff is exceptional."</p>
+                    </div>
+                    <div class="f-cont">
+                    <img src="	https://html.awaikenthemes.com/dentaire/images/author-3.jpg" alt="">
+                    <div>
+                    <h2>Antony das</h2>
+                    <p>Designer</p>
+                    </div>
+                    </div>
+                    </div>
+              </div>
             </div>
             <div class="test-but">
-                <button><img src="./imges-icons/left-arrow.png" alt=""></button>
-                <button><img src="./imges-icons/right-arrow.png" alt=""></button>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <img src="./imges-icons/left-arrow.png" alt=""></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <img src="./imges-icons/right-arrow.png" alt=""></button>    
+                </div>
         </div>
         </div>
         </section>
@@ -448,7 +497,7 @@
 
     <!-- Map section -->
 
-    <section class="map">
+    <section class="map" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
         <div class="m-link">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15755.193388533495!2d77.87102794999998!3d9.1726552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1770295512955!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -474,7 +523,7 @@
                 </div>
             </div>
             <div class="s-but">
-            <button class="but">Make Appointment
+            <button class="but" onclick="ena()">Make Appointment
             <div>
                 <img src="./imges-icons/arrow.png" alt=""> 
             </div>
@@ -485,7 +534,7 @@
 
     <!-- Footer Section -->
 
-     <footer class="footer">
+     <footer class="footer" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
         <div class="f-parent">
             <div class="child-logo">
                 <img src="https://html.awaikenthemes.com/dentaire/images/footer-logo.svg" alt="">
@@ -499,7 +548,7 @@
                 <div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="service.html">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="contact.html">Book Appointment</a></li>
                 </ul>
@@ -523,9 +572,8 @@
                 </div>
                 <div>
                 <ul>
-                    <li><img src="./imges-icons/domain.png" alt="">info@domain.com</li>
-                    <li><img src="./imges-icons/call.png" alt="">+(123) 698-5245</li>
-                    <li><img src="./imges-icons/mail.png" alt="">dentaire@gmail.com</li>
+                    <li><a href="tel:8765432100"><img src="./imges-icons/call.png" alt="">+(123) 698-5245</a></li>
+                    <li><a href="mailto:vasanth@gmail.com"><img src="./imges-icons/mail.png" alt="">dentaire@gmail.com</a></li>
                     <li><img src="./imges-icons/location.png" alt="">123,4th St,Chennai.</li>
                 </ul>
                 </div>
@@ -536,6 +584,44 @@
             <p>Copyright © 2024 All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- POP UP SECTION -->
+    <section class="popup-parent" id="popup-parent">
+    <div class="popup" id="popup">
+            <img src="./imges-icons/doctor.jpg" alt="">
+        <div class="popup-child"> 
+            <h1>Book An Apointment</h1>
+            <div class="pop-close">
+            <button onclick="finish()" ><img src="./imges-icons/icons8-close-30.png" width="20px">
+            </button>
+            </div>
+            <div class="input-cont-1">
+                <p>Your Name</p>
+                <input type="text">
+                <img src="./imges-icons/icons8-user-32.png" alt="" class="p-icon">
+            </div>
+            <div class="input-cont-1">
+            <p>Phone no</p>
+            <input type="text">
+             <span><img src="./imges-icons/icons8-call-48.png" alt="" class="p-icon"></span>
+            </div>
+            
+            <div class="input-cont-1">
+            <p>Any Message</p>
+            <textarea name="" id="" rows="4" cols="28"></textarea>
+            <span><img src="./imges-icons/icons8-message-32.png" alt="" class="p-icon"></span>
+            </div>
+            <div class="input-cont-2">
+            <p>Select your</p>
+            <input type="date">
+             <span><img src="" class="p-icon"></span>
+            </div>
+            <div class="pop-button">
+            <button onclick="finish()">Submit</button>
+            </div>
+        </div>
+    </div>
+    </section>
 </body>
 <script>
     // side bar
@@ -550,5 +636,24 @@
         sidebar.style.left="-1000px";
     }
 
+    var p = document.getElementById("popup-parent");
+
+    function ena(){
+        p.style.display = "flex";
+    }
+
+    function finish(){
+        p.style.display = "none";
+    }
+
 </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- bootstrap script link -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
